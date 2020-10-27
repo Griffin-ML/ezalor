@@ -34,7 +34,7 @@ def queryPrestoToDataframe(query_statement):
 
 def _createCursor():
     try:
-        config_path = str(Path.home()) + ".ezalor/config.json"
+        config_path = str(Path.home()) + "/.ezalor/config.json"
         with open(config_path) as securityConfig:
             securityConfig = dict(json.load(securityConfig))
     except IOError:
